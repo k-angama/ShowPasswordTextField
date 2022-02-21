@@ -1,0 +1,16 @@
+PODS:
+  - ShowPasswordTextField (1.0.0)
+
+DEPENDENCIES:
+  - ShowPasswordTextField (from `../`)
+
+EXTERNAL SOURCES:
+  ShowPasswordTextField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ShowPasswordTextField: afaa03b704087989f841e3bdd4525383261104d1
+
+PODFILE CHECKSUM: cbf19c09456516075ae57b36c0b523b4b2cfc2de
+
+COCOAPODS: 1.11.2

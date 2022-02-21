@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Hll-9S-2Ao">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="d03-fR-k2j">
+            <objects>
+                <viewController id="Hll-9S-2Ao" customClass="ViewController" customModule="ShowPasswordTextField_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dq6-02-vUe"/>
+                        <viewControllerLayoutGuide type="bottom" id="vcH-I0-C0J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ayU-w9-R71">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyr-Uz-C3d" customClass="ShowPasswordTextField" customModule="ShowPasswordTextField">
+                                <rect key="frame" x="20" y="104" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <connections>
+                                    <outlet property="textDragDelegate" destination="Hll-9S-2Ao" id="fir-C8-sTj"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eyr-Uz-C3d" firstAttribute="leading" secondItem="ayU-w9-R71" secondAttribute="leadingMargin" id="CEw-5V-0GM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eyr-Uz-C3d" secondAttribute="trailing" id="ygI-lq-E0g"/>
+                            <constraint firstItem="eyr-Uz-C3d" firstAttribute="top" secondItem="dq6-02-vUe" secondAttribute="bottom" constant="60" id="zCM-k9-sF8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstTextField" destination="eyr-Uz-C3d" id="G69-RF-DNy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1e-vf-eQ1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="153"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="eyr-Uz-C3d">
+            <size key="intrinsicContentSize" width="79" height="34"/>
+        </designable>
+    </designables>
+</document>

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'ShowPasswordTextField_Example' do
+  pod 'ShowPasswordTextField', :path => '../'
+
+  target 'ShowPasswordTextField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
